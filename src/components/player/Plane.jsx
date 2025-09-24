@@ -14,7 +14,6 @@ function Plane({ planeRef, shadowRef, propellerRef, planeSprite, planeShadow, pr
         top: `${parseInt(planeRef.current?.style.top || '400px') + 5}px`,
         width: '30px',
         height: '30px',
-        border: '2px dashed red',
         borderRadius: '50%',
         pointerEvents: 'none',
         zIndex: 9999
