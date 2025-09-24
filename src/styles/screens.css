@@ -1,0 +1,105 @@
+/* screens.css */
+/* Pantallas de inicio, game over y victoria */
+
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-2);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.start-screen {
+  color: var(--color-screen);
+}
+
+.go-screen {
+  color: var(--color-screen-go);
+}
+
+.screen nav {
+  width: 80%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.screen li {
+  flex-grow: 1;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.screen li:last-child {
+  text-align: end;
+}
+
+.screen h1, .screen h2 {
+  margin-bottom: 1rem;
+  font-weight: 200;
+  text-shadow: .05em .05em 1px var(--black-1);
+  flex-grow: 1;
+}
+
+.screen h1 {
+  font-size: 7rem;
+  filter: drop-shadow(0 0 .05em var(--color-screen));
+  animation: title 1s step-start infinite;
+}
+
+.screen h2 {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--color-screen-go);
+  filter: drop-shadow(0 0 .05em var(--color-screen-go));
+  animation: title-go 1s step-start infinite;
+}
+
+.screen p {
+  font-size: 1.2rem;
+  flex-grow: 1;
+}
+
+.screen .start-text {
+  animation: blink 1s step-start infinite;
+}
+
+.victory-screen {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  z-index: 999;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes title {
+  50% { filter: drop-shadow(0 0 .075em var(--color-screen)); }
+}
+
+@keyframes title-go {
+  50% { filter: drop-shadow(0 0 .075em var(--color-screen-go)); }
+}

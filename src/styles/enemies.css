@@ -1,0 +1,57 @@
+/* enemies.css */
+/* Enemigos, balas enemigas, explosiones */
+
+.enemy {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.enemy-wrapper {
+  position: absolute;
+  pointer-events: none;
+}
+
+.enemy-shadow {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  opacity: 0.3;
+  width: 100%;
+}
+
+.enemy-propeller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.enemy-plane {
+  position: relative;
+  width: 100%;
+}
+
+.explosion {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.enemy-bullet {
+  animation: fall 0.2s linear infinite;
+  filter: drop-shadow(0 0 .1em var(--color-screen-go));
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fall {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(2px); }
+}

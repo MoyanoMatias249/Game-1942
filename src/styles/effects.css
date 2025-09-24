@@ -1,0 +1,51 @@
+/* effects.css */
+/* Animaciones, nubes, barcos */
+
+.cloud {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  opacity: 0.4;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.mission-ship-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 400px;
+}
+
+.mission-ship {
+  width: 200px;
+  animation: float 3s ease-in-out;
+}
+
+.arrival-ship-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  z-index: 0;
+  animation: descendWithBackground 4s both;
+}
+
+.arrival-ship {
+  width: 200px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  15% { transform: translateY(4px); }
+  30% { transform: translateY(0); }
+  45% { transform: translateY(4px); }
+  60% { transform: translateY(4px); }
+  100% { transform: translateY(300px); }
+}
+
+@keyframes descendWithBackground {
+  0% { top: -400px; }
+  100% { top: 0; }
+}

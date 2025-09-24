@@ -1,0 +1,40 @@
+/* plane.css */
+/* Avión del jugador, sombra, hélice, estela */
+
+.plane {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+}
+
+.shadow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0.3;
+  z-index: -5;
+}
+
+.propeller {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: 3;
+}
+
+.smoke {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bullet {
+  position: absolute;
+  width: 6px;
+  height: 16px;
+  z-index: 2;
+  filter: drop-shadow(0 0 .1em var(--color-screen));
+}

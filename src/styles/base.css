@@ -1,0 +1,23 @@
+/* base.css */
+/* Variables globales y tipografía base */
+
+:root {
+  --color-screen: #00f7ff;
+  --color-screen-go: #ff1a1a;
+
+  --black-0: #000000;
+  --black-1: #1a1a1a;
+  --black-2: #181818;
+
+  --white-1: #eeeeee;
+
+  --game-scale: 1;
+  --game-offset: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, var(--black-1), var(--black-0) 100%);
+  font-family: 'Press Start 2P', "Roboto Mono", "Bitcount Grid Double", monospace;
+}

@@ -1,0 +1,124 @@
+/* responsive.css */
+/* Adaptación para pantallas pequeñas */
+
+
+@media (min-width: 600px) {
+  .game1942-container {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .game-wrapper{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .game1942-container {
+    width: 100vw;
+    height: 700px;
+    border: none;
+  }
+
+  .hud {
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 120px;
+    padding: 1em;
+    gap: 1em;
+  }
+
+  .hud .hud-right{
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+  .screen h1 {
+    font-size: 5rem;
+  }
+
+  .screen h2 {
+    font-size: 3rem;
+  }
+
+  .plane, .shadow {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bullet {
+    width: 6px;
+    height: 18px;
+  }
+
+  .cloud {
+    width: 150px;
+  }
+
+  .enemy {
+    width: 30px;
+    height: 30px;
+  }
+
+  .explosion {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media (min-height: 1300px) {
+  .game1942-container {
+    transform: scale(2);
+  }
+}
+
+@media (max-height: 1300px) {
+  .game1942-container {
+    transform: scale(1.5);
+  }
+}
+
+@media (max-height: 1100px) {
+  .game1942-container {
+    transform: scale(1.5);
+  }
+}
+
+@media (max-height: 980px) {
+  .game1942-container {
+    transform: scale(1.4);
+  }
+}
+
+@media (max-height: 800px) {
+  .game1942-container  {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-height: 700px) {
+  .game1942-container  {
+    transform: scale(1.1);
+  }
+}
+@media (max-height: 600px) {
+  .game1942-container  {
+    transform: scale(1.0);
+  }
+}
+@media (max-height: 500px) {
+  .game1942-container  {
+    transform: scale(0.7);
+  }
+}
+@media (max-height: 400px) {
+  .game1942-container  {
+    transform: scale(0.5);
+  }
+}
